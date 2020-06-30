@@ -161,7 +161,7 @@
 	<p>2.On the AKS cluster dashboard, under Monitoring on the left-hand side, choose Insights.</p>
 	<p>3.Select either the Nodes or Controllers tab.</p>
 	<p>4.Select a Pod object from the performance grid, and on the properties pane found on the right side, select View live data (preview) option. If the AKS cluster is configured with single sign-on using Azure AD, you are prompted to authenticate on first use during that browser session. Select your account and complete authentication with Azure.</p>
-<p>Congratulations! You made it through the end!</p>
+<h2><p>Congratulations! You made it through the end!</p></h2>
 <p>Thank you for taking this lab!</p>
 <p>We enjoyed developing the lab and we sincerely hope it met your expectations!</p>
 <p>The exercise in the lab were meant to touch base with some new trending technologies in the Azure function app developer’s world.</p>
