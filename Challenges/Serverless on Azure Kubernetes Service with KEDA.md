@@ -79,13 +79,13 @@
 <p>1. Install KEDA</p>
 	<p>•Add Helm repo</p>
 	<b>helm repo add kedacore https://kedacore.github.io/charts</p>
-	<b>Update Helm repo</b>
-	<b>helm repo update</b>
-	<b>Install keda Helm chart</b>
+	<p>Update Helm repo</p>
+	<p>helm repo update</p>
+	<p>Install keda Helm chart</p>
 	<b>kubectl create namespace keda</b>
 	<b>helm install keda kedacore/keda --namespace keda</b>
 <p>To confirm that KEDA has successfully installed you can run the following command and should see the following CRD.</p>
-	<p>kubectl get customresourcedefinition</p>
+	<b>kubectl get customresourcedefinition</b>
 <p>2. We need to create Kubernetes secret to fetch image from ACR using secrets.</p>
 	<p>kubectl create secret docker-registry acr-auth --docker-server=<acr_name>.azurecr.io --docker-username=<acrusername> --docker-password=<ACR password> --docker-email mailto:userxxx@xxx.onmicrosoft.com)</p>
 <p>3. Deploy Function App to KEDA (Virtual Nodes)</p>
