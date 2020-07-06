@@ -94,23 +94,7 @@
 	<p>In below command add ACR name as <acrname>.azurecr.io</p>
 	<p>func kubernetes deploy --name hello-keda --registry <acr_name>.azurecr.io --dotnet --pull-secret acr-auth --dry-run deploy.yaml</p>
 <p>Open and modify the created deploy.yaml to tolerate scheduling onto any nodes, including virtual.</p>
-	<p>spec:</p>
-	<p>containers:
-	<p>- name: hello-keda</p>
-	<p>image: <acr name>.azurecr.io/hello-keda</p>
-	<p>env:</p>
-	<p>- name: AzureFunctionsJobHost__functions__</p>
-	<p>value: QueueTrigger1</p>
-	<p>envFrom:</p>
-	<p>-  secretRef:</p>
-	<p>name: hello-keda</p>
-	<p>imagePullSecrets:</p>
-	<p>- name: acr-auth</p>
-	<p>tolerations:</p>
-	<p>- key: virtual-kubelet.io/provider</p>
-	<p>operator: Exists</p>
-	<p>- key: azure.com/aci</p>
-        <p>effect: NoSchedule</p>
+	<b><p>Note - Download the code from the labfiles</p></b>
 <p>Login into ACR</p>
 	<p>az acr login ---name <acr name></p>
 <p>Build and deploy the container image and apply the deployment to your cluster.Replace < your-acr-id> with <ACRname>.azurecr.io in below commands.</p>
